@@ -1,0 +1,172 @@
+.transform{
+	height: 200px;
+	width: 200px;
+	background-color: cadetblue;
+	margin: 20px;
+	transition: 0.5s;
+}
+#t1:hover{
+	transform: rotate(-360deg);
+	margin-bottom: 25px;
+}
+#t2:hover{
+	transform: scale(0.5, 1);
+	margin-bottom: 25px;
+}
+#t3:hover{
+	transform: translate(40px, 40px);
+	margin-bottom: 25px;
+}
+#t4:hover{
+	transform: skew(30deg);
+	margin-bottom: 25px;
+}
+#t5:hover{
+	transform: matrix(5,0,0,1,100,190);
+	margin-bottom: 25px;
+}
+.image{
+	height: 300px;
+	width: 300px;
+	position: relative;
+	background-size: cover;
+	background-image: url(peizash.jpg);
+}
+.wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 300px;
+	color: #fff; 
+	font-size: 30px;
+	font-family: sans-serif;
+	opacity: 0;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.wrapper:hover{
+	opacity: 1;
+}
+.btn{
+	display: block;
+	position: relative;
+	margin: 200px;
+	outline: none; 
+	border: none;
+	padding: 15px 20px; 
+	background-color: blue;
+	color: #fff; 
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn:hover{
+	background-color: mediumblue;
+}
+.btn:active{
+	background-color: darkblue;
+}
+.light::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	left: -15px;
+	background-color: white;
+	transition: 0.3s; 
+	transform: skew(-25deg); 
+}
+.light:hover::before{
+	 left: calc(100% + 15px);
+}
+.image{
+	height: 300px;
+	transition: 1s;
+}
+.box:hover .image{
+	transform: scale(1.5);
+}
+.text{
+	position: absolute; 
+	background-color: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	user-select: none; 
+	line-height: 300px; 
+	color: white;
+	font-size: 25px;
+	font-family: sans-serif;
+	transition: 0.2s;
+}
+.text1{
+	transform: translate(-100%, 100%); 
+}
+.block:hover .text1{
+	transform: translate(0); 
+}
+.block1{
+	overflow: hidden;
+}
+.text2{
+	transform: scale(0);
+}
+.block:hover .text2{
+	transform: scale(1);
+}
+h1{
+	font-family: sans-serif;
+	width: max-content; 
+	position: relative;
+}
+h1::before,h1::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #000;
+	transition: 0.2s;
+} 
+h1::before{
+	bottom: 0;
+}
+h1::after{
+	left: 0;
+	top: 1px;
+}
+h1:hover:before,h1:hover:after{
+	width: 100%;
+}
+.burger{
+	height: 2px; 
+	width: 15px; 
+	background-color: #000; 
+	position: relative; 
+	transition: 0.2s;
+}
+.burger::before{
+	top:-5px;
+} 
+.burger::after{
+	top: 5px;
+}
+.menu{
+	height: 7px;
+	width: 15px; 
+	padding-top: 4px;  
+}
+.menu:hover .burger{
+	width: 0;
+} 
+.menu:hover .burger::before{
+	transform: translate(0,5px) rotate(45deg);
+} 
+.menu:hover .burger::after{
+	transform: translate(0,-5px) rotate(-45deg);
+}
