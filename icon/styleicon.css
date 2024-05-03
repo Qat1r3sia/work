@@ -1,0 +1,66 @@
+.icon{
+	position: relative;
+	background-color: crimson;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.icon *{
+	position: absolute;
+}
+.lense{
+	height: 200px;
+	width: 200px;
+	background-color: steelblue;
+	border-radius: 50%;
+	top: 110px;
+	left: 190px;
+}
+.handle{
+	height: 250px;
+	width:30px;
+	background-color: steelblue;
+	transform: rotate(45deg);
+	top: 50px;
+	border-radius: 15px;
+}
+.handle .light{
+	height: 140px;
+	width: 15px;
+	background-color: lightblue;
+	bottom: 0;
+	border-bottom-left-radius: 15px;
+}
+.glass{
+	height: 150px;
+	width: 150px;
+	background-color: aqua;
+	border-radius: 50%;
+	top: 25px;
+	left: 25px;
+	overflow: hidden;
+}
+.glass *{
+	height: 120px;
+	width: 120px;
+	background-color: white;
+	border-radius: 50%;
+}
+.glass .light1{
+	top: -2px;
+	left: 4px;
+	background-color: white;
+}
+.glass .light2{
+	background-color: steelblue;
+	bottom: 10px;
+	right: 10px;
+}
+.glass .light3{
+	height: 131px;
+	width: 131px;
+	background-color: aqua;
+	bottom: 12.5px;
+	right: 12.5px;
+}
