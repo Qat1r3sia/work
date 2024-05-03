@@ -1,0 +1,25 @@
+#battery1{
+	height: 90px;
+	width: 300px;
+	border: solid gray;
+}
+#bt-section1{
+	float: right;
+	margin: 5px;
+	height: 80px;
+	width: 290px;
+	background-color: rgb(00,255,00);
+}
+.bt-bg{
+	height: 100%
+	width: 100%;
+}
+#percent1{
+	color: gray;
+	margin: 0 135px;
+}
+.container{
+	height: 500px;
+	width: 500px;
+	background-color: lightgray;
+}
